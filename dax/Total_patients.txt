@@ -1,0 +1,1 @@
+Total patient = CALCULATE( SUM(NHS_Rtt[Total All]),NHS_Rtt[Treatment Function Code]<>"C_999")

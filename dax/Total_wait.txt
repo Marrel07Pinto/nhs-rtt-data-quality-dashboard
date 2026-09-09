@@ -1,0 +1,1 @@
+Total Waiting = [Weeks (0-18)] + [Weeks (18-52)] + [Weeks (52-104)] + [Weeks (104+)]

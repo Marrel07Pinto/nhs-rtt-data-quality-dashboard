@@ -1,0 +1,63 @@
+Percentage_long_wait_volume = 
+
+var numo = CALCULATE(SUMX(
+        NHS_Rtt,
+        NHS_Rtt[Gt 52 To 53 Weeks SUM 1] +
+        NHS_Rtt[Gt 53 To 54 Weeks SUM 1] +
+        NHS_Rtt[Gt 54 To 55 Weeks SUM 1] +
+        NHS_Rtt[Gt 55 To 56 Weeks SUM 1] +
+        NHS_Rtt[Gt 56 To 57 Weeks SUM 1] +
+        NHS_Rtt[Gt 57 To 58 Weeks SUM 1] +
+        NHS_Rtt[Gt 58 To 59 Weeks SUM 1] +
+        NHS_Rtt[Gt 59 To 60 Weeks SUM 1] +
+        NHS_Rtt[Gt 60 To 61 Weeks SUM 1] +
+        NHS_Rtt[Gt 61 To 62 Weeks SUM 1] +
+        NHS_Rtt[Gt 62 To 63 Weeks SUM 1] +
+        NHS_Rtt[Gt 63 To 64 Weeks SUM 1] +
+        NHS_Rtt[Gt 64 To 65 Weeks SUM 1] +
+        NHS_Rtt[Gt 65 To 66 Weeks SUM 1] +
+        NHS_Rtt[Gt 66 To 67 Weeks SUM 1] +
+        NHS_Rtt[Gt 67 To 68 Weeks SUM 1] +
+        NHS_Rtt[Gt 68 To 69 Weeks SUM 1] +
+        NHS_Rtt[Gt 69 To 70 Weeks SUM 1] +
+        NHS_Rtt[Gt 70 To 71 Weeks SUM 1] +
+        NHS_Rtt[Gt 71 To 72 Weeks SUM 1] +
+        NHS_Rtt[Gt 72 To 73 Weeks SUM 1] +
+        NHS_Rtt[Gt 73 To 74 Weeks SUM 1] +
+        NHS_Rtt[Gt 74 To 75 Weeks SUM 1] +
+        NHS_Rtt[Gt 75 To 76 Weeks SUM 1] +
+        NHS_Rtt[Gt 76 To 77 Weeks SUM 1] +
+        NHS_Rtt[Gt 77 To 78 Weeks SUM 1] +
+        NHS_Rtt[Gt 78 To 79 Weeks SUM 1] +
+        NHS_Rtt[Gt 79 To 80 Weeks SUM 1] +
+        NHS_Rtt[Gt 80 To 81 Weeks SUM 1] +
+        NHS_Rtt[Gt 81 To 82 Weeks SUM 1] +
+        NHS_Rtt[Gt 82 To 83 Weeks SUM 1] +
+        NHS_Rtt[Gt 83 To 84 Weeks SUM 1] +
+        NHS_Rtt[Gt 84 To 85 Weeks SUM 1] +
+        NHS_Rtt[Gt 85 To 86 Weeks SUM 1] +
+        NHS_Rtt[Gt 86 To 87 Weeks SUM 1] +
+        NHS_Rtt[Gt 87 To 88 Weeks SUM 1] +
+        NHS_Rtt[Gt 88 To 89 Weeks SUM 1] +
+        NHS_Rtt[Gt 89 To 90 Weeks SUM 1] +
+        NHS_Rtt[Gt 90 To 91 Weeks SUM 1] +
+        NHS_Rtt[Gt 91 To 92 Weeks SUM 1] +
+        NHS_Rtt[Gt 92 To 93 Weeks SUM 1] +
+        NHS_Rtt[Gt 93 To 94 Weeks SUM 1] +
+        NHS_Rtt[Gt 94 To 95 Weeks SUM 1] +
+        NHS_Rtt[Gt 95 To 96 Weeks SUM 1] +
+        NHS_Rtt[Gt 96 To 97 Weeks SUM 1] +
+        NHS_Rtt[Gt 97 To 98 Weeks SUM 1] +
+        NHS_Rtt[Gt 98 To 99 Weeks SUM 1] +
+        NHS_Rtt[Gt 99 To 100 Weeks SUM 1] +
+        NHS_Rtt[Gt 100 To 101 Weeks SUM 1] +
+        NHS_Rtt[Gt 101 To 102 Weeks SUM 1] +
+        NHS_Rtt[Gt 102 To 103 Weeks SUM 1] +
+        NHS_Rtt[Gt 103 To 104 Weeks SUM 1] +
+        NHS_Rtt[Gt 104 Weeks SUM 1]),NHS_Rtt[Treatment Function Code]<> "C_999"
+)
+
+VAR deno = CALCULATE(SUM(NHS_Rtt[Total All]),NHS_Rtt[Treatment Function Code]<> "C_999")
+
+RETURN
+DIVIDE(numo,deno,0)

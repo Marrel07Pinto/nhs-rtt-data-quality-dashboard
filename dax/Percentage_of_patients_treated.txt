@@ -1,0 +1,5 @@
+Percentage_of_Patients_Treated = 
+var Numerator = CALCULATE(SUM(NHS_Rtt[Total All]),NHS_Rtt[Treatment Function Code] <> "C_999",NHS_Rtt[RTT Part Type] IN {"Part_1A","Part_1B"})
+var deno = CALCULATE(SUM(NHS_Rtt[Total All]),NHS_Rtt[Treatment Function Code] <> "C_999")
+return
+DIVIDE(Numerator,deno,0)

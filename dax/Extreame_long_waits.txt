@@ -1,0 +1,1 @@
+Extreme_long_wait = CALCULATE(SUM(NHS_Rtt[Gt 104 Weeks SUM 1]),NHS_Rtt[Treatment Function Code]<>"C_999")
