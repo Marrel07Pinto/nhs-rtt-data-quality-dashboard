@@ -2,7 +2,7 @@
 
 A data quality investigation and Power BI dashboard built on NHS England's Referral to Treatment (RTT) Waiting Times data for June 2026. This project moves from raw CSV → validated MySQL data → SQL-verified KPIs → an interactive Power BI dashboard, with every finding backed by an executable query.
 
-![Dashboard Screenshot](images/Page1.png)
+![Dashboard Screenshot](nhs-rtt-data-quality-dashboard/images/Page_1.png)
 
 ---
 
@@ -155,15 +155,15 @@ nhs-rtt-data-quality-dashboard/
 │
 ├── images/
 │   ├── KPI.png
-│   ├── Page 1.png
-│   ├── Page 2.png
-│   ├── Top 10 Providers - Long Waits.png
-│   ├── Wait Time Breakdown.png
-│   ├── Long Waits by Specialty.png
-│   ├── Long Wait by Region.png
-│   ├── Interactive Filtering.png
-│   ├── Missing Data by Provider.png
-│   └── Patient Journey Breakdown.png
+│   ├── Page_1.png
+│   ├── Page_2.png
+│   ├── Top_10_Providers - Long Waits.png
+│   ├── Wait_Time_Breakdown.png
+│   ├── Long_Waits_by_Specialty.png
+│   ├── Long_Wait_by_Region.png
+│   ├── Interactive_Filtering.png
+│   ├── Missing_Data_by_Provider.png
+│   └── Patient_Journey_Breakdown.png
 │
 └── powerbi/
     └── NHS_RTT.pbix
