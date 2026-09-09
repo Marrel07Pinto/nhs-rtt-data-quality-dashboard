@@ -157,7 +157,7 @@ nhs-rtt-data-quality-dashboard/
 │   ├── KPI.png
 │   ├── Page_1.png
 │   ├── Page_2.png
-│   ├── Top_10_Providers - Long Waits.png
+│   ├── Top_10_Providers_Long_Waits.png
 │   ├── Wait_Time_Breakdown.png
 │   ├── Long_Waits_by_Specialty.png
 │   ├── Long_Wait_by_Region.png
